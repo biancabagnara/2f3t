@@ -28,3 +28,37 @@ function porcentagem(){
     }
 
 }
+const calcula_eq2g = (){
+    //delta = b*b - 4.a.c
+    a = Number(a);
+    b = Number(b);
+    c = Number(c);
+    if (sa != "+") a = -a;
+    if (sb != "+") b = -b;
+    if (sc != "+") c = -c;
+    let delta = (b * b) - (4*a*c);
+    document.getElementById("delta")
+}
+
+const set_sinal_a = () => {
+    sa =document.getElementById(a).value;
+}
+const set_sinal_b = () => {
+    sb =document.getElementById(b).value;
+}
+const set_sinal_c = () => {
+    sc = document.getElementById(c).value;
+}
+
+const set_valor_a = () => {
+    a = document.getElementById("valor_a").value;
+    calcula_eq2g
+}
+const set_valor_a = () => {
+    a = document.getElementById("valor_b").value;
+    calcula_eq2g
+}
+const set_valor_a = () => {
+    a = document.getElementById("valor_c").value;
+    calcula_eq2g
+}
